@@ -7,11 +7,10 @@ class Compotravel extends Component {
       return (
         <div className='Voyage' key={name.id}>
           <div>
-            Vous irez à {name.destination} qui se trouve en {name.country}
+            <img src={name.photo} alt='La ville' />
           </div>
           <div>
-            Le bateau utilisé sera celui ci :{' '}
-            <img src={name.photo} alt='Un bateau' />
+            Vous irez à {name.destination} qui se trouve en {name.country}
           </div>
           <div>
             Vous etes actuellement à {name.distance} km de votre déstination.
